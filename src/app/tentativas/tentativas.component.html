@@ -1,0 +1,8 @@
+<!---
+<img [src]="coracaoVazio">
+<img [src]="coracaoCheio">
+<img [src]="coracaoCheio">
+-->
+<!--percorre um array de coracoes, e em cada um do loops, pega o coracao
+e acessando os atributos desse objeto-->
+<img *ngFor="let coracao of coracoes" [src]="coracao.exibeCoracao()"/>
